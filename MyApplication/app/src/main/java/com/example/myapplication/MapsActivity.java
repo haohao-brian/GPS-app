@@ -170,8 +170,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             return;
         }
         mLocationManager
-                .requestLocationUpdates(LM_GPS, 1000, 10, mLocationListener);
-        mLocationManager.requestLocationUpdates(LM_NETWORK, 1000, 10,
+                .requestLocationUpdates(LM_GPS, 1000, 3, mLocationListener);
+        mLocationManager.requestLocationUpdates(LM_NETWORK, 1000, 3,
                 mLocationListener);
         setTitle("onResume ...");
         super.onResume();
